@@ -11,4 +11,4 @@ class Database:
 
     @classmethod
     def find(cls, finder):                               #lambda x : x['username'] == 'Hakan'
-        return  [user for user in cls.content['users'] if finder(user)]
+        return  [user['username'] for user in cls.content['users'] if finder(user)]
