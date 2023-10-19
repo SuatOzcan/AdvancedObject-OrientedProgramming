@@ -14,7 +14,7 @@ class Admin(User):
             'password' : self.password,
             'access' : self.accesss
         }
-
+    
     def super_usage_with_pretty_algorithm(self):
         return super().pretty_algorithm()
     
