@@ -1,4 +1,5 @@
 from user import User
+from database import Database
 
 class Admin(User):
     def __init__(self, username, password, access):
@@ -10,11 +11,14 @@ class Admin(User):
     
     def to_dict(self):
         return {
-            'username' : self.user,
+            'username' : self.username,
             'password' : self.password,
             'access' : self.accesss
         }
     
+    def save(self):
+        Database.insert(self.to_dict())
+
     def super_usage_with_pretty_algorithm(self):
         return super().pretty_algorithm()
     
