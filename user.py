@@ -8,3 +8,9 @@ class User:
 
     def _repr__(self):
         return f'<User {self.username}>'
+    
+    def __name__(self):
+        return f'<User class>'
+    
+    def pretty_algorithm(self):
+        return 'I am very pretty.'
