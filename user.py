@@ -11,6 +11,3 @@ class User:
     
     def __name__(self):
         return f'<User class>'
-    
-    def pretty_algorithm(self):
-        return 'I am very pretty.'
