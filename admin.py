@@ -2,7 +2,7 @@ from user import User
 from saveable import Saveable
 from database import Database
 
-class Admin(User,Saveable):
+class Admin(User):
     def __init__(self, username, password, access):
         super(Admin, self).__init__(username, password)
         self.accesss = access
